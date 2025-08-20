@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+<script 
+  src="https://www.paypal.com/sdk/js?client-id=BAAYD8P8lkdgNCYUVzDZ6spkLX9Wmp6XuDCD9XnVOajtGMV5v-99DC25auR3E2l7sbFD9K_tVTSjmfnjsw&components=buttons&enable-funding=card&commit=true&intent=capture&disable-funding=venmo&currency=EUR&locale=fr_FR">
+</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BOOSTE MA CARRIERE!</title>
+  <meta name="description" content="Boostez votre carrière : optimisation de CV, LinkedIn et candidatures automatisées. Simple, rapide et efficace.">
+  <link rel="canonical" href="https://www.boostemacarriere.online/">
+  <title>BOOSTE MA CARRIÈRE&nbsp;!</title>
   <style>
     /* Défilement fluide */
     html { scroll-behavior: smooth; }
@@ -44,9 +49,8 @@
     .grid-3{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
     .card{ padding:20px; border:1px solid #ddd; border-radius:8px; text-align:center; background:#fff; }
     .card-premium{ border:2px solid #007BFF; transform:scale(1.03); }
-    .badge-pop{ display:inline-block; background:#ffecb3; padding:2px 8px; border-radius:999px; font-size:.85rem; margin-bottom:8px; }
-
-    .btn{
+    $1
+    .price{ font-weight:600; color:#007BFF; }.btn{
       position:relative; display:inline-block; margin-top:20px; background:#007BFF;
       color:#fff; padding:12px 20px; border-radius:6px; text-decoration:none; overflow:hidden;
       transition:color .3s ease, background .3s ease;
@@ -85,20 +89,20 @@
   </style>
 </head>
 <body>
-  <nav>
+  <nav role="navigation" aria-label="Navigation principale">
     <a href="#services">Nos services</a>
     <a href="#method">Méthode</a>
-    <a href="#tarifs">Tarifs</a>
-    <!-- Commandez entre Tarifs et Contactez-nous, espace menu réduit -->
-    <a href="#btn-commande" style="color:#00C6FF; font-weight:bold; margin-bottom:6px;">Commandez</a>
+    <a href="#tarifs">Notre offre</a>
+    <!-- Lien Commandez pointe vers la nouvelle section #commande -->
+    <a href="#commande" style="color:#00C6FF; font-weight:bold; margin-bottom:6px;">Commandez</a>
     <a href="#contact">Contactez-nous</a>
   </nav>
 
   <main>
     <header class="reveal slide-up">
-      <h1><strong>BOOSTE MA CARRIERE!</strong></h1>
+      <h1><strong>BOOSTE MA CARRIÈRE!</strong></h1>
       <p>
-        A la recherche d'un stage, d'un emploi, d'un poste mieux rémunéré, 
+        À la recherche d'un stage, d'un emploi, d'un poste mieux rémunéré, 
         d'une nouvelle aventure, plus proche de chez vous ou en télétravail ?
         N'attendez plus. Confiez-nous votre carrière !
         Nous optimisons votre CV et postulons pour vous sur des centaines de sites,
@@ -129,37 +133,57 @@
 
     <!-- Espace Notification → Tarifs réduit de 75% -->
     <section id="tarifs" style="margin-top:-30px;">
-      <h2 class="reveal slide-up">Tarifs</h2>
+      <h2 class="reveal slide-up">Notre offre</h2>
       <div class="grid-3">
         <div class="card reveal slide-up" id="pack-starter">
           <span class="badge-pop">💡 Starter</span>
           <h3>Starter – 30 candidatures</h3>
-          <p>99 €</p>
         </div>
         <div class="card reveal slide-up" id="pack-pro">
           <span class="badge-pop">🚀 Pro</span>
           <h3>Pro – 100 candidatures</h3>
-          <p>199 €</p>
           <p>Optimisation CV + LinkedIn</p>
         </div>
         <div class="card card-premium reveal slide-up" id="pack-premium">
           <span class="badge-pop">⭐ Populaire</span>
           <h3>Premium – 250 candidatures</h3>
-          <p>299 €</p>
           <p>Optimisation CV + LinkedIn</p>
         </div>
       </div>
-      <!-- Bouton Commandez ciblé par le menu -->
-      <a href="#contact" class="btn reveal" id="btn-commande">Commandez</a>
     </section>
 
-    <!-- Espace Commandez (section) → Contactez-nous réduit de 75% -->
+    <!-- Nouvelle section Commandez en 3 colonnes, comme Tarifs -->
+    <section id="commande" style="margin-top:-30px;">
+      <h2 class="reveal slide-up">Commandez</h2>
+      <div class="grid-3">
+        <div class="card reveal slide-up" id="order-starter">
+          <h3>Starter – 30 candidatures <span class="price">— 99 €</span></h3>
+          <div class="qty reveal" style="margin-top:8px"><label for="qty-starter">Quantité</label> <input id="qty-starter" type="number" min="1" value="1" style="width:72px; padding:6px; margin-left:8px;"></div>
+<div id="paypal-container-CVLHLWQHBFM5N"></div>
+<noscript><p>JavaScript requis. <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CVLHLWQHBFM5N" rel="noopener">Payer</a></p></noscript>
+        </div>
+        <div class="card reveal slide-up" id="order-pro">
+          <h3>Pro – 100 candidatures <span class="price">— 199 €</span></h3>
+          <div class="qty reveal" style="margin-top:8px"><label for="qty-pro">Quantité</label> <input id="qty-pro" type="number" min="1" value="1" style="width:72px; padding:6px; margin-left:8px;"></div>
+<div id="paypal-container-E8KW8QA2E6Q98"></div>
+<noscript><p>JavaScript requis. <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E8KW8QA2E6Q98" rel="noopener">Payer</a></p></noscript>
+        </div>
+        <div class="card card-premium reveal slide-up" id="order-premium">
+          <h3>Premium – 250 candidatures <span class="price">— 299 €</span></h3>
+          <div class="qty reveal" style="margin-top:8px"><label for="qty-premium">Quantité</label> <input id="qty-premium" type="number" min="1" value="1" style="width:72px; padding:6px; margin-left:8px;"></div>
+<div id="paypal-container-NSGKGSPF3SBPY"></div>
+<noscript><p>JavaScript requis. <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NSGKGSPF3SBPY" rel="noopener">Payer</a></p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- Espace Commandez → Contactez-nous réduit -->
     <section id="contact" class="grid-2" style="margin-top:-40px;">
       <div class="reveal">
         <h2>Contactez-nous</h2>
         <p>Expliquez-nous vos besoins et recevez un plan personnalisé.</p>
-        <p><strong>TEL :</strong> <a href="tel:0743323948">0743323948</a>
-           &nbsp; <strong>EMAIL :</strong> <a href="mailto:careerboost06@gmail.com">careerboost06@gmail.com</a></p>
+        $1
+        <p>Venez nous rencontrer sur rendez-vous au 8 bis rue Gabriel VOISIN 51100 REIMS</p>
       </div>
       <form method="POST" action="https://script.google.com/macros/s/TON_SCRIPT_APPS_SCRIPT/exec" class="reveal">
         <!-- Formulaire supprimé comme demandé -->
@@ -185,16 +209,67 @@
       document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
     })();
 
-    // Surbrillance du bouton après clic sur "Commandez" (menu)
-    document.querySelectorAll('nav a[href="#btn-commande"]').forEach(link=>{
-      link.addEventListener('click', ()=>{
-        const btn = document.getElementById('btn-commande');
-        setTimeout(()=>{
-          btn.classList.add('highlight');
-          setTimeout(()=>btn.classList.remove('highlight'), 2000);
-        }, 600); // temps pour le scroll
-      });
+    // Boutons PayPal en français (locale fr_FR) avec sélection de quantité + fallback CB
+(function setupPayPal(){
+  function renderButtons(){
+    if (!(window.paypal && paypal.Buttons)) { setTimeout(renderButtons, 150); return; }
+    const packs = [
+      { selector:'#paypal-container-CVLHLWQHBFM5N', desc:'Pack Starter – 30 candidatures', unitPrice:99.00, qtySelector:'#qty-starter', hostedId:'CVLHLWQHBFM5N' },
+      { selector:'#paypal-container-E8KW8QA2E6Q98', desc:'Pack Pro – 100 candidatures', unitPrice:199.00, qtySelector:'#qty-pro', hostedId:'E8KW8QA2E6Q98' },
+      { selector:'#paypal-container-NSGKGSPF3SBPY', desc:'Pack Premium – 250 candidatures', unitPrice:299.00, qtySelector:'#qty-premium', hostedId:'NSGKGSPF3SBPY' }
+    ];
+    packs.forEach(p=>{
+      paypal.Buttons({
+        style:{ label:'pay', layout:'vertical', shape:'pill' },
+        createOrder: (_, actions) => {
+          const qtyEl = document.querySelector(p.qtySelector);
+          let qty = parseInt(qtyEl && qtyEl.value ? qtyEl.value : '1', 10);
+          if (isNaN(qty) || qty < 1) qty = 1;
+          if (qty > 99) qty = 99;
+          const total = (p.unitPrice * qty);
+          const totalStr = total.toFixed(2);
+          const unitStr = p.unitPrice.toFixed(2);
+          return actions.order.create({
+            intent:'CAPTURE',
+            application_context:{ shipping_preference:'NO_SHIPPING', user_action:'PAY_NOW' },
+            purchase_units:[{
+              description: p.desc,
+              amount:{
+                currency_code:'EUR',
+                value: totalStr,
+                breakdown:{ item_total:{ currency_code:'EUR', value: totalStr } }
+              },
+              items:[{
+                name: p.desc,
+                unit_amount:{ currency_code:'EUR', value: unitStr },
+                quantity: String(qty),
+                category:'DIGITAL_GOODS'
+              }]
+            }]
+          });
+        },
+        onApprove: (data, actions) => actions.order.capture().then(()=>{
+          alert('Paiement validé. Merci !');
+        }),
+        onError: (err) => {
+          console.error('PayPal error', err);
+          const msg = 'Carte bancaire indisponible pour le moment. Vous pouvez réessayer plus tard ou finaliser via la page sécurisée PayPal.';
+          if (confirm(msg + '\n\nOuvrir la page PayPal ?')) {
+            const qtyEl = document.querySelector(p.qtySelector);
+            let qty = parseInt(qtyEl && qtyEl.value ? qtyEl.value : '1', 10);
+            if (isNaN(qty) || qty < 1) qty = 1;
+            if (qty > 99) qty = 99;
+            const url = 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=' + p.hostedId + '&quantity=' + qty;
+            window.open(url, '_blank', 'noopener');
+          } else {
+            alert('Erreur lors du paiement. Veuillez réessayer.');
+          }
+        }
+      }).render(p.selector);
     });
+  }
+  renderButtons();
+})();
   </script>
 </body>
 </html>
