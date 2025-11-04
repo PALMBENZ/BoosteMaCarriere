@@ -2,10 +2,18 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>BOOSTE MA CARRIÈRE&nbsp;!</title>
   <meta name="description" content="Boostez votre carrière : optimisation de CV, candidatures automatisées. Simple, rapide et efficace." />
   <link rel="canonical" href="https://www.boostemacarriere.online/" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- Balises Open Graph pour SEO/réseaux sociaux -->
+  <meta property="og:title" content="BOOSTE MA CARRIÈRE !" />
+  <meta property="og:description" content="Optimisez votre CV et boostez votre carrière avec des candidatures ciblées et automatisées." />
+  <meta property="og:url" content="https://www.boostemacarriere.online/" />
+  <meta property="og:type" content="website" />
+
   <style>
     html { scroll-behavior: smooth; }
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
@@ -134,13 +142,6 @@
     h2:hover::after, h3:hover::after {
       width: 100%;
     }
-    .grid-3-columns {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px 30px;
-      margin-top: 16px;
-    }
-    /* Nouvelle grille 4 colonnes pour la liste sites */
     .grid-4-columns {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -234,18 +235,33 @@
         margin-left: 0;
         padding-top: 80px;
       }
-      .grid-3-columns {
-        grid-template-columns: 1fr 1fr;
-      }
       .grid-4-columns {
         grid-template-columns: repeat(2, 1fr);
       }
     }
     @media (max-width: 500px) {
-      .grid-3-columns,
       .grid-4-columns {
         grid-template-columns: 1fr;
       }
+    }
+
+    /* Bouton retour haut */
+    #topBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      z-index: 100;
+    }
+    #topBtn:hover {
+      background: #0056b3;
     }
   </style>
 </head>
@@ -261,7 +277,7 @@
     <header>
       <h1><strong>BOOSTE MA CARRIÈRE!</strong></h1>
       <p>
-        À la recherche d’un stage, d’un emploi, d’un meilleur poste, ou d’une nouvelle aventure ?<br />
+        À la recherche d’un stage, d’un emploi, d’un meilleur poste, avec plus de <span style="color: orange; font-weight: bold;">télétravail, voire full télétravail</span> ou plus proche de chez vous ?<br />
         N’attendez plus. Confiez-nous votre carrière ! Pour vous, nous optimisons votre CV ainsi que sa visibilité
         sur des <span style="color: orange; font-weight: bold;">CENTAINES</span> de sites, <strong style="color:#007BFF;">choisis par vous</strong>, pour maximiser vos chances.
       </p>
@@ -275,27 +291,33 @@
       </div>
       <div class="method-step">
         <div class="step-number">2</div>
-        <h3>📝 Refonte : CV optimisé pour faire la différence.</h3>
+        <h3>📝 Refonte : CV optimisé pour faire la différence</h3>
       </div>
       <div class="method-step">
         <div class="step-number">3</div>
-        <h3>📌 Proposition : Nous ciblons pour vous les sites de candidatures les plus pertinents.</h3>
+        <h3>🌐 Création : Un site web personnalisé pour présenter votre CV, vos projets, expériences et portfolio</h3>
       </div>
       <div class="method-step">
         <div class="step-number">4</div>
-        <h3>🚀 Optimisation : notre outil optimise la visibilité de votre votre candidature sur des dizaines voire des centaines de sites web choisis par vous</h3>
+        <h3>📌 Proposition : Nous ciblons pour vous les sites de candidatures les plus pertinents</h3>
       </div>
       <div class="method-step">
         <div class="step-number">5</div>
+        <h3>🚀 Optimisation : nous optimisons la visibilité de votre candidature sur des dizaines voire des centaines de sites web choisis par vous</h3>
+      </div>
+      <div class="method-step">
+        <div class="step-number">6</div>
+        <h3>🚀 Sur-Mesure : nous implémentons votre outil d'automatisation de vos candidatures spontannées sur des dizaines voire des centaines d'opportunités</h3>
+      </div>
+      <div class="method-step">
+        <div class="step-number">7</div>
         <h3>🔔 Coaching : nous vous préparons aux futurs entretiens</h3>
       </div>
     </section>
 
     <section id="sites">
       <h2>Sites pour candidater</h2>
-      <p>Pour l'exemple, ci-dessous quelques une des <span style="color: orange; font-weight: bold;">CENTAINES</span>
-de plateformes avec lesquelles nous travaillons à <span style="color: orange; font-weight: bold;"> optimiser la visibilité de votre cv,</span> après avoir obtenu votre <span style="color: orange; font-weight: bold;">accord explicite</span>
-. La liste n'est pas exhaustive. </p>
+      <p>Quelques exemples parmi les <span style="color: orange; font-weight: bold;">CENTAINES</span> de plateformes avec lesquelles nous travaillons après votre <span style="color: orange; font-weight: bold;">accord explicite</span>.</p>
       <ul class="grid-4-columns">
         <li>Apec</li>
         <li>Indeed</li>
@@ -337,7 +359,6 @@ de plateformes avec lesquelles nous travaillons à <span style="color: orange; f
         <li>Jobboost</li>
         <li>Jobtimiser</li>
         <li>Emploi Collectivités</li>
-        <li>Jobteaser</li>
         <li>MyJob.Company</li>
         <li>Talentup</li>
         <li>Jobprod</li>
@@ -345,7 +366,7 @@ de plateformes avec lesquelles nous travaillons à <span style="color: orange; f
         <li>Emploi Store</li>
         <li>Isograd Emploi</li>
         <li>Jobmarketingvente</li>
-	<li>Meteojob</li>
+        <li>Meteojob</li>
         <li>RegionsJob Transport</li>
         <li>Cadresonline</li>
         <li>Lesboursesdelemploi</li>
@@ -355,8 +376,7 @@ de plateformes avec lesquelles nous travaillons à <span style="color: orange; f
 
     <section id="commande">
       <h2>Commandez</h2>
-      <form action="https://formsubmit.co/contact@boostemacarriere.online" method="POST" enctype="multipart/form-data">
-
+      <form action="https://formsubmit.co/palmbenz@yahoo.fr" method="POST" enctype="multipart/form-data">
         <input type="hidden" name="_next" value="https://www.boostemacarriere.online/merci.html">
         <input type="hidden" name="_captcha" value="false">
         <input type="text" name="_honey" style="display:none">
@@ -376,13 +396,16 @@ de plateformes avec lesquelles nous travaillons à <span style="color: orange; f
         <label for="poste">Intitulé du poste recherché *</label>
         <input type="text" id="poste" name="poste" required />
 
-        <label>Nombre de candidatures *</label>
-        <div class="checkbox-group" role="radiogroup" aria-labelledby="nombre-candidatures-label">
-          <label><input type="radio" name="candidatures" value="30 candidatures - 99€" required /> 30 candidatures - 99€</label>
-          <label><input type="radio" name="candidatures" value="90 candidatures - 199€" /> 90 candidatures - 199€</label>
-          <label><input type="radio" name="candidatures" value="150 candidatures - 299€" /> 150 candidatures - 299€</label>
-          <label><input type="radio" name="candidatures" value="250 candidatures - 399€" /> 250 candidatures - 399€</label>
-        </div>
+        <fieldset>
+          <legend>Optimisation de votre visibilité via </legend>
+          <div class="checkbox-group">
+            <label><input type="radio" name="candidatures" value="10 - 99€" required /> 10 sites webs ou 40 candidatures spontannées  - 99€</label>
+            <label><input type="radio" name="candidatures" value="40 - 199€" /> 40 sites webs ou 160 candidatures spontannées  - 199€</label>
+            <label><input type="radio" name="candidatures" value="100 - 299€" /> 100 sites webs ou 400 candidatures spontannées - 299€</label>
+            <label><input type="radio" name="candidatures" value="250 - 399€" /> 250 sites webs ou 1000 candidatures spontannées - 399€</label>
+ 	    <label><input type="radio" name="candidatures" value="1000 - 799€" /> 1000 sites webs ou 4000 candidatures spontannées - 799€</label>
+          </div>
+        </fieldset>
 
         <label for="cv">Joindre votre CV (format PDF ou DOCX) *</label>
         <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required />
@@ -393,8 +416,11 @@ de plateformes avec lesquelles nous travaillons à <span style="color: orange; f
 
     <section id="contact">
       <h2>Contactez-nous</h2>
-      <p>Pour toute question ou demande spécifique, <strong>TEL : </strong> 0743323948  <strong>EMAIL : </strong>  <a href="mailto:palmbenz@yahoo.fr">boostemacarriere@gmail.com</a>.</p>
+      <p>Pour toute question ou demande spécifique, <strong>TEL : </strong> 0743323948  <strong>EMAIL : </strong> <a href="mailto:boostemacarriere@gmail.com">boostemacarriere@gmail.com</a>.</p>
     </section>
   </main>
+
+  <!-- Bouton retour haut -->
+  <button id="topBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" title="Retour en haut">↑</button>
 </body>
 </html>
