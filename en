@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>BOOST MY CAREER!</title>
+  <meta name="description" content="Boost your career: CV optimization, automated job applications. Simple, fast and effective." />
+  <link rel="canonical" href="https://www.boostemacarriere.online/en/" />
+  <link rel="alternate" hreflang="fr" href="https://www.boostemacarriere.online/" />
+  <link rel="alternate" hreflang="en" href="https://www.boostemacarriere.online/en/" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- Open Graph tags for SEO / social networks -->
+  <meta property="og:title" content="BOOST MY CAREER!" />
+  <meta property="og:description" content="Optimize your CV and boost your career with targeted, automated job applications." />
+  <meta property="og:url" content="https://www.boostemacarriere.online/en/" />
+  <meta property="og:type" content="website" />
+  <style>
+	  button.premium {
+  display: block;
+  margin: 30px auto;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+    nav {
+      background: #222;
+      color: #fff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+      overflow-y: auto;
+    }
+    nav a {
+      display: block;
+      padding: 12px 20px;
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      transition: color .3s ease;
+      position: relative;
+    }
+    nav a::after {
+      content: "";
+      position: absolute;
+      bottom: 6px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #007BFF, #00C6FF);
+      transition: width .3s ease;
+    }
+    nav a:hover {
+      color: #00C6FF;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    nav a[href="#commande"],
+    nav a[href="#sites"] {
+      color:#00C6FF;
+      font-weight:bold;
+      margin-bottom:6px;
+    }
+    main {
+      margin-left: 200px;
+      padding: 20px;
+      position: relative;
+      z-index: 0;
+      max-width: 900px;
+    }
+    header {
+      background: #f5f5f5;
+      padding: 40px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #007BFF;
+      margin-bottom: 12px;
+    }
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    section {
+      padding: 40px 0;
+      background: white;
+      margin-bottom: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    .method-step {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    .step-number {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #007BFF;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin-right: 12px;
+      flex-shrink: 0;
+    }
+    h2, h3 {
+      position: relative;
+      display: inline-block;
+      padding-bottom: 6px;
+      transition: color .3s ease;
+      color: #007BFF;
+    }
+    h2::after, h3::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #007BFF, #00C6FF);
+      transition: width .4s ease;
+    }
+    h2:hover, h3:hover {
+      color: #0056b3;
+    }
+    h2:hover::after, h3:hover::after {
+      width: 100%;
+    }
+    .grid-4-columns {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px 25px;
+      margin-top: 16px;
+      list-style: none;
+      padding-left: 0;
+      color: #222;
+    }
+    .grid-4-columns li {
+      padding-left: 15px;
+      position: relative;
+    }
+    .grid-4-columns li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #007BFF;
+      font-weight: bold;
+    }
+    form {
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="file"] {
+      width: 100%;
+      padding: 8px 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 25px;
+      margin-top: 8px;
+    }
+    .checkbox-group label {
+      font-weight: normal;
+      cursor: pointer;
+    }
+    .checkbox-group input[type="checkbox"],
+    .checkbox-group input[type="radio"] {
+      margin-right: 8px;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+    button {
+      margin-top: 25px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #005bb5;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+    @media (max-width: 900px) {
+      nav {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        padding: 10px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 20;
+      }
+      main {
+        margin-left: 0;
+        padding-top: 80px;
+      }
+      .grid-4-columns {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 500px) {
+      .grid-4-columns {
+        grid-template-columns: 1fr;
+      }
+    }
+    /* Back to top button */
+    #topBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      z-index: 100;
+    }
+    #topBtn:hover {
+      background: #0056b3;
+    }
+.audit {
+  background-color: #28a745 !important;
+  color: white;
+}
+.premium {
+  background-color: #007bff !important;
+  color: white;
+}
+	  .container h2 {
+  margin-bottom: 0;
+}
+.container iframe {
+  margin-top: 0;
+}
+	  /* Language switcher */
+    .language-switcher {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      z-index: 1000;
+      display: flex;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 8px 12px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+    .language-switcher a {
+      display: inline-block;
+      line-height: 0;
+      opacity: 0.5;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .language-switcher a:hover,
+    .language-switcher a.active {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+    .language-switcher img {
+      width: 30px;
+      height: auto;
+      border-radius: 3px;
+      display: block;
+    }
+	  .button-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    max-width: 900px;
+}
+.button-row button.premium {
+    margin: 0;
+    flex: 1;
+    min-width: 260px;
+    max-width: 400px;
+}
+  </style>
+</head>
+<body>
+	<div class="language-switcher" role="navigation" aria-label="Language selector">
+    <a href="/" aria-label="French version" title="Français">
+        <img src="https://flagcdn.com/w80/fr.png" alt="Français">
+    </a>
+    <a href="/en/" class="active" aria-label="English version" title="English">
+        <img src="https://flagcdn.com/w80/gb.png" alt="English">
+    </a>
+</div>
+
+<nav role="navigation" aria-label="Main navigation">
+    <a href="#method">Method</a>
+    <a href="#contact">Contact us</a>
+    <a href="#demo-webinar">Demo - Webinar</a>
+	<a href="#training-catalog">Training catalog</a>
+  </nav>
+  <main>
+    <header>
+      <h1><strong>BOOST MY CAREER!</strong></h1>
+     <div class="pitch">
+  <p class="hook">
+    Tired of sending CVs with no response? Or too busy to find the opportunity you deserve?
+	Do you want a job with more remote work? Better pay?
+  </p>
+  <p class="promise">
+    We optimize and distribute your application to maximize your chances of getting a callback.
+  </p><br>
+  <p class="result">
+    <strong>Result:</strong> more interviews, faster. Stop searching alone. Let us find it for you.
+    Trust us with your career 🚀
+  </p>
+</div>
+    </header>
+<div class="button-row">
+    <button type="button"
+            class="premium"
+            name="action"
+            value="premium"
+            onclick="window.location.href='https://buy.stripe.com/28E7sLbSicSHakGd0j18c00'">
+        I want to save time and land more interviews -&gt; &euro;89
+    </button>
+    <button type="button"
+            class="premium"
+            name="action"
+            value="premium"
+            onclick="window.location.href='https://buy.stripe.com/28E7sLbSicSHakGd0j18c00'">
+        PREMIUM Support -&gt; &euro;689
+    </button>
+</div>
+<div class="container">
+    <h2>Make sure your CV includes your first name, email and phone number</h2>
+    <iframe
+        data-tally-src="https://tally.so/embed/5BqLAQ?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+        loading="lazy"
+        width="100%"
+        height="300"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="Send your CV">
+    </iframe>
+</div>
+    <div class="buttons">
+<div class="button-row">
+    <button type="button"
+            class="premium"
+            name="action"
+            value="premium"
+            onclick="window.location.href='https://buy.stripe.com/28E7sLbSicSHakGd0j18c00'">
+        I want to save time and land more interviews -&gt; &euro;89
+    </button>
+    <button type="button"
+            class="premium"
+            name="action"
+            value="premium"
+            onclick="window.location.href='https://buy.stripe.com/28E7sLbSicSHakGd0j18c00'">
+        PREMIUM Support -&gt; &euro;689
+    </button>
+</div>
+
+<section id="method" style="padding-top:20px;">
+      <h2>Our method</h2>
+      <div class="method-step">
+        <div class="step-number">1</div>
+        <h3>🔍 Analysis: Full diagnosis of your profile, understanding of your background and career goals</h3>
+      </div>
+      <div class="method-step">
+        <div class="step-number">2</div>
+        <h3>✍️ Rewrite: CV optimized for recruiters and algorithms. Stand out from the crowd!</h3>
+      </div>
+      <div class="method-step">
+        <div class="step-number">3</div>
+        <h3>🌐 Website: Creation and SEO optimization of your personal website so that your CV ranks high on Google</h3>
+      </div>
+      <div class="method-step">
+        <div class="step-number">4</div>
+        <h3>📌 Proposal: We select and target the best job platforms for you</h3>
+      </div>
+      <div class="method-step">
+        <div class="step-number">5</div>
+        <h3>🚀 Optimization: We maximize the visibility of your application</h3>
+      </div>
+      <div class="method-step">
+        <div class="step-number">6</div>
+        <h3>🤖 Tailor-made: With your consent, we set up your automated job-application tool</h3>
+      </div>
+      <div class="method-step">
+        <div class="step-number">7</div>
+        <h3>🛡️ Our guarantee: We offer an additional month of support free of charge if, despite our efforts, we have not helped you secure 3 job interviews.</h3>
+      </div>
+    </section>
+<div class="button-row">
+    <button type="button"
+            class="premium"
+            name="action"
+            value="premium"
+            onclick="window.location.href='https://buy.stripe.com/28E7sLbSicSHakGd0j18c00'">
+        I want to save time and land more interviews -&gt; &euro;89
+    </button>
+    <button type="button"
+            class="premium"
+            name="action"
+            value="premium"
+            onclick="window.location.href='https://buy.stripe.com/28E7sLbSicSHakGd0j18c00'">
+        PREMIUM Support -&gt; &euro;689
+    </button>
+</div>
+
+<section id="contact">
+      <h2>Contact us</h2>
+      <p>For any questions or specific requests, <strong>PHONE:</strong> +33 7 43 32 39 48  <strong>EMAIL:</strong> <a href="mailto:boostemacarriere@gmail.com">boostemacarriere@gmail.com</a>.</p>
+    </section>
+    <section id="demo-webinar">
+      <h2>Demo - Webinar</h2>
+      <p>To learn more about our services, book your spot for our next webinar on <strong>Thursday, April 23 at 8:00 PM (CET)</strong>.</p>
+      <div class="container">
+        <iframe
+            data-tally-src="https://tally.so/embed/7R91M2?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+            loading="lazy"
+            width="100%"
+            height="500"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="Webinar registration">
+        </iframe>
+      </div>
+    </section>
+		    <section id="training-catalog">
+      <h2>Our training catalog</h2>
+	  <p>FREE: Enroll in one of our courses via your CPF account and get our PREMIUM job-search support for free at the end!</p>
+      <p>The programs below are eligible for <strong>CPF funding</strong> (French personal training account).</p>
+    </section>
+  </main>
+  <!-- Back to top button -->
+  <button id="topBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" title="Back to top">↑</button>
+	<script src="https://tally.so/widgets/embed.js"></script>
+</body>
+</html>
