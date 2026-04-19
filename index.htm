@@ -290,9 +290,50 @@
 .container iframe {
   margin-top: 0;
 }
+
+	  /* Sélecteur de langue */
+    .language-switcher {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      z-index: 1000;
+      display: flex;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 8px 12px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+    .language-switcher a {
+      display: inline-block;
+      line-height: 0;
+      opacity: 0.5;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .language-switcher a:hover,
+    .language-switcher a.active {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+    .language-switcher img {
+      width: 30px;
+      height: auto;
+      border-radius: 3px;
+      display: block;
+    }
   </style>
 </head>
 <body>
+
+	<div class="language-switcher" role="navigation" aria-label="Choix de la langue">
+    <a href="/" class="active" aria-label="Version française" title="Français">
+        <img src="https://flagcdn.com/w80/fr.png" alt="Français">
+    </a>
+    <a href="/en/" aria-label="English version" title="English">
+        <img src="https://flagcdn.com/w80/gb.png" alt="English">
+    </a>
+</div>
+	
 <nav role="navigation" aria-label="Navigation principale">
     <a href="#method">Méthode</a>
     <a href="#contact">Contactez-nous</a>
